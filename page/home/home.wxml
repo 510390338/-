@@ -1,0 +1,4 @@
+<!--page/home/home.wxml-->
+<view>help</view>
+<button size="mini">是</button>
+<button size="mini">否</button>
