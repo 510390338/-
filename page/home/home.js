@@ -1,16 +1,34 @@
 // page/home/home.js
 Page({
 
-  /**
-   * 页面的初始数据
-   */
-  data: {
-
+  /**   * 页面的初始数据   */
+  data: {name:'coderwht',
+         age:'10',
+         count:0,
+         student:[
+           {id:110,name:'qw',age:10},
+           {id:111,name:'qw',age:10},
+           {id:112,name:'qw',age:10},
+           {id:113,name:'qw',age:10},
+           {id:114,name:'qw',age:10}
+           ]                    
+  }, 
+  jiafa() {
+ //   this.data.count +=1
+ //   console.log('按钮发生点击')
+ //↑界面不会刷新
+ this.setData({
+   count:this.data.count + 1
+ }) 
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
+  jianfa(){
+    this.setData({
+    count:this.data.count - 1   
+    })
+  },
+
+  /**   * 生命周期函数--监听页面加载   */
   onLoad: function (options) {
 
   },

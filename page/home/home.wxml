@@ -2,3 +2,12 @@
 <view>help</view>
 <button size="mini">是</button>
 <button size="mini">否</button>
+<view>hello  {{name}}</view>
+<view>我的年龄：{{age}}</view>
+<view>{{student[0].age}}</view>
+
+<view wx:for="{{student}}">{{item.name}}{{item.id}}</view>
+
+<view>当前计数：{{count}}</view>
+<button size="mini" bindtap="jiafa">+</button>
+<button size="mini" bindtap="jianfa">-</button>
